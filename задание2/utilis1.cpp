@@ -1,8 +1,8 @@
 
 void Swap(int& a, int& b)
 {
-    int c = 0;
-    c = a;
-    a = b;
-    b = c;
+    int *pa = &a;
+	int *pb = &b;
+	a = *pb;
+	b = *pa;
 }
